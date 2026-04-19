@@ -17,24 +17,26 @@ const NewReleaseCard = ({ anime }) => {
       style={{
         width: 260,
         minWidth: 260,
-        backgroundColor: '#1a1a1a',
-        border: 'none',
-        borderRadius: '16px',
+        backgroundColor: '#0f172a',
+        border: '1px solid rgba(255,255,255,0.08)',
+        borderRadius: '20px',
         overflow: 'hidden',
         cursor: 'pointer',
-        transition: 'transform 0.3s ease',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        boxShadow: '0 20px 60px rgba(0, 0, 0, 0.16)',
       }}
+      bodyStyle={{ padding: '16px 16px 18px' }}
       cover={
         <img
           alt={anime.title}
           src={anime.image}
-          style={{ height: 380, objectFit: 'cover' }}
+          style={{ height: 382, objectFit: 'cover', display: 'block' }}
         />
       }
     >
       <Card.Meta
-        title={<span style={{ color: '#fff', fontSize: '18px', fontWeight: 600 }}>{anime.title}</span>}
-        description={<span style={{ color: '#888', fontSize: '15px' }}>{anime.episode}</span>}
+        title={<span style={{ color: '#ffffff', fontSize: '18px', fontWeight: 700 }}>{anime.title}</span>}
+        description={<span style={{ color: '#94a3b8', fontSize: '14px' }}>{anime.episode}</span>}
       />
     </Card>
   );

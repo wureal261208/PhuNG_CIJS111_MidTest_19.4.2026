@@ -8,15 +8,16 @@ const AppHeader = () => {
   return (
     <Header
       style={{
-        backgroundColor: '#0f0f0f',
-        padding: '0 40px',
-        height: '70px',
+        backgroundColor: 'rgba(6, 10, 18, 0.94)',
+        padding: '0 32px',
+        height: '72px',
         display: 'flex',
         alignItems: 'center',
-        borderBottom: '1px solid #222',
+        borderBottom: '1px solid rgba(255,255,255,0.08)',
         position: 'sticky',
         top: 0,
         zIndex: 1000,
+        backdropFilter: 'blur(10px)',
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

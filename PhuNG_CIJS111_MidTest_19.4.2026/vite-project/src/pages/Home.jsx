@@ -45,12 +45,13 @@ const Home = () => {
   ];
 
   return (
-    <Layout style={{ minHeight: '100vh', backgroundColor: '#0f0f0f' }}>
+    <Layout style={{ minHeight: '100vh', backgroundColor: '#050812' }}>
       <AppHeader />
-      
-      <Layout.Content style={{ padding: '0 40px 80px' }}>
-        <HeroBanner />
-        <NewRelease animes={newReleases} />
+      <Layout.Content style={{ padding: '30px 24px 80px' }}>
+        <div style={{ maxWidth: 1260, margin: '0 auto' }}>
+          <HeroBanner />
+          <NewRelease animes={newReleases} />
+        </div>
       </Layout.Content>
     </Layout>
   );
