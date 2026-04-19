@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { SearchOutlined } from '@ant-design/icons';
+import './Navbar.css';
 
 const navItems = [
   { to: '/', label: 'Home', end: true },
